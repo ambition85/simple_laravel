@@ -1,5 +1,7 @@
 <?php
 
+// use App\Http\Controllers\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,7 +13,7 @@
 |
 */
 
-// Route::resource("products", ProductController);
+Route::resource('products', 'ProductController');
 
 Route::get('/', function () {
     return view('welcome');
